@@ -7,7 +7,7 @@
 
 1. Ben Lim [gituser](link)
 2. Jason Roode
-3. Jack Schaeffer
+3. Jack Schaeffer [@jschaeffer2525]
 4. Yirong Shen [@Yishen6](https://www.github.com/Yishen6)
 5. Nathan To
 

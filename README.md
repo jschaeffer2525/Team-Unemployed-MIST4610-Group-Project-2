@@ -5,7 +5,7 @@
 
 ## Team Members: 
 
-1. Ben Lim [gituser](link)
+1. Ben Lim [@ben270lim](https://github.com/ben270lim/Team-Unemployed-MIST4610-Group-Project-1)
 2. Jason Roode
 3. Jack Schaeffer
 4. Yirong Shen [@Yishen6](https://www.github.com/Yishen6)
@@ -76,16 +76,70 @@ Aside from patient care, we also have data regarding **Medication** that can be 
 
 ## Queries: 
 
-Insert Queries Table Here
+<img width="527" alt="image" src="https://github.com/user-attachments/assets/8d7e5c2a-0b42-4262-a4be-ab6148b4109b">
 
 Query 1: Give the appointments that were scheduled between October 20th and October 27th. Show the appointment ID, date and time. Also show the full names of the patient and doctor that was involved in the appointment. 
 
 <img width="1219" alt="image" src="https://github.com/user-attachments/assets/3c796dc7-1d65-47f4-b582-6d5d0939053c">
 
-Query 2: 
+Query 1 gives us the details of all the appointments that were made during one week of operation. By seeing the names of the patients, we can calculate how often a single patient may book multiple appointments. We can also see how many appointments a doctor may attend to. From a managerial perspective, this helps with organization and predicting how many appointments the hospital receives in one week. This data can help create more efficient human resource management. 
+
+Query 2: Find and list the insurance companies that offer a copay lower than the average copay. List the insurance id, company name and a new column named "AvgCoPay".
+
+<img width="1202" alt="image" src="https://github.com/user-attachments/assets/4e47af3d-481c-4837-b820-8b6c3a1586eb">
+
+Query 2 calculates the average copay provided by each individual company and then filters it by only showing the companies that have a lower average than the general average copay cost. When discussing which companies to work with in the future, we can use this data to collaborate with the companies that provide the most benefits to our patients. This data is also useful when it comes to recommending insurance plans to our patients. 
+
+Query 3: Give the patient's full name and the insurance company they are using that have "Pending" payment statuses. Also include the amount billed. 
+
+<img width="1208" alt="image" src="https://github.com/user-attachments/assets/571efc08-c10b-49ae-adc0-8507a622696b">
+
+Query 3 allows accounting departments to see which insurance companies or patients haven't paid their bills yet. If a certain case is under "Pending" for a long time, there may require further actions to be taken from the hospital side. If a certain insurance company is being difficult to work with, causing the bill to be "Pending", the managerial team may want to consider terminating collaboration with that specific insurance compay. The amount that is billed can also help bookkeeping and calculating bad debt. 
+
+Query 4: For each individual nurse, only show the nurses that worked more hours than the average hours worked for all nurses. Include shift length in hours. 
+
+<img width="1205" alt="image" src="https://github.com/user-attachments/assets/b29f4eb2-b187-47e8-9329-c5103b3bbcc2">
+
+Query 4 can show us the nurses that worked more hours than average. We included the shift length to make sure that the nurses the query displayed are working full time shifts. This data can help the human resources department consider which nurses may be given promotions, bonuses or raises. We want to reward the employees who work more than expected and create a competitive yet positive working environment. 
+
+Query 5: List the patients that listed their parents as emergency contacts. Provide their contact information. 
+
+<img width="1200" alt="image" src="https://github.com/user-attachments/assets/7b4ec9ca-d308-4359-8c3e-85ac070ab673">
+
+Query 5 can filter through the emergency contacts and display only the parents of the patients we care for. Usually, if a patient writes down a parent as an emergency contact, they may still be considered a dependant. This would help the hospital categorize patients and archive their information in case legal issues arise. 
+
+Query 6: Find the patients with appointments that have have the area code 404 or 678. 
+
+<img width="1207" alt="image" src="https://github.com/user-attachments/assets/a6b2a2f5-12f7-4869-ab5f-2698f16d3512">
+
+Query 6 can give us insight on which geographic area our patients are from. If a certain area code shows up in our database multiple times, we know that a large portion of our clientele resides there. With that same logic, if a certain area code rarely shows up in our database, the residents there may not be aware of our hospital. Marketing can then target that specific location and create advertisements to encourage our services. 
+
+Query 7: Given a doctor's unique id, show the patients that they cared for. Include their assigned dates and the date the patient is discharged on. 
+
+<img width="1206" alt="image" src="https://github.com/user-attachments/assets/8130ff60-ea36-40c8-8be2-b20754da6d7c">
+
+Query 7 is similar to Query 4 where it can be used for human resource purposes. This query can be edited to show the number of patients a specific doctor tended to. The time between the date a doctor is assigned to a patient and when they are discharged can show how efficient or effective a doctor is. Doctors with high effectiveness should be rewarded whereas doctors with low efficiency should be encouraged to improve. 
+
+Query 8: For each insurance company, calculate the number of patients they have completed payments for, the average copay and the total amount paid. Total amount paid can be calculated as the sum of Deductibles and Copay. 
+
+<img width="1210" alt="image" src="https://github.com/user-attachments/assets/a4315432-351b-4419-bdb9-95e67b42f8b0">
+
+Query 8 can tell us the capabilities and size of each insurance company. A bigger, more well known company or plan would have more patients. From a business perspective, we would want to accept these more popular plans as payments because this would make the hospital more accessible to patients. The total amount the insurance pays for also gives us insight on how the insurance company is operating. A successful insurance company may be able to offer higher, fuller coverages. The hopital would want to work with these companies since they have deeper pockets. 
+
+Query 9: Calculate the total and average dosage prescribed for each type of medication. Include the number of times the medication was prescribed. 
+
+<img width="1209" alt="image" src="https://github.com/user-attachments/assets/f42dc742-3a47-43b2-8fea-1d8d48c52a51">
+
+Query 9 helps the hospital's inventory management. By knowing how often a medication is prescribed, we can order that certain type of medication more frequently. Not only does this ensure that we can estimate the total cost the hospital might spend on medication for our accounts, it also ensures we have enough stock to provide service to our patients.  The calculated dosage will tell us how much of that medication we would need to order. 
+
+Query 10: List the doctor with the most years of experience from each department. Make sure to include their deptartment head if applicable. 
+
+<img width="1194" alt="image" src="https://github.com/user-attachments/assets/69e77599-da33-49f9-93a1-13e5bee65d93">
+
+Query 10 allows management to see which doctors have the most years of experience. This can commonly be correlated to highest capability to succeed in difficult procedures. Doctors with the most experience can also be prioritized when it comes to deciding promotions. If the result for the department head column comes back as null, we know that they are already in that position and further rewards should be considered. 
 
 ## Database Information: 
 
-Name of Database: cs_ys69826
+Name of Database: cs_jps37990
 
 Additional information: Each query listed above is marked in the database using stored procedures which can be called using the following format: CALL TP_Q1();
